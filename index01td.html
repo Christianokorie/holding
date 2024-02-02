@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="front/css/bootstrap.min.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="front/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="front/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="front/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="front/images/site.webmanifest" />
+    <link rel="shortcut icon" href="front/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="front/images/browserconfig.html"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="X-UA-compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.10.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="../cdn.jsdelivr.net/npm/bootstrap%405.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="front/css/owl.carousel.css" />
+    <link rel="stylesheet" href="front/css/owl.theme.default.css" />
+    <link rel="stylesheet" href="front/css/main.css" />
+    <link rel="stylesheet" href="front/css/nice-select.css" />
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="front/js/jquery.ui.touch-punch.js"></script>
+    <script src="../translate.google.com/translate_a/element3a21.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="front/js/owl.carousel.js"></script>
+    <script src="front/js/jquery.maskedinput.min.js"></script>
+    <script
+      src="../cdn.jsdelivr.net/npm/bootstrap%405.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script
+      src="../cdn.jsdelivr.net/npm/%40popperjs/core%402.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"
+    ></script>
+    <script src="front/js/jquery.nice-select.js"></script>
+    <script src="../unpkg.com/aos%402.3.1/dist/aos.js"></script>
+    <link
+      href="../external.html?link=https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #9832cc;
+        border-radius: 4px;
+      }
+      /* body {
+        background-color: #000;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+      } */
+      .testimony {
+        height: 100%;
+      }
+      .card {
+        position: relative;
+        border: solid 1px #212121;
+        padding: 45px 50px 25px 60px;
+
+        background: url('./front/images/offer1-bg.png') left top no-repeat;
+
+        border-radius: 10px;
+        color: #fff;
+      }
+
+      .post-txt {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+
+      .quote-img {
+        position: absolute;
+        top: 32px;
+        left: 25px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .nice-img {
+        width: 20px;
+        height: 25px;
+        margin-bottom: 7px;
+      }
+
+      .arrow-down {
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 20px solid #275880;
+        margin-left: 85px;
+      }
+
+      .fit-image {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .profile-pic {
+        position: static;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        margin-left: 45px;
+        animation: morph 4.1s linear infinite;
+        margin-top: 15px;
+      }
+
+      .profile-name {
+        position: absolute;
+        font-size: 22px;
+        margin-top: 60px;
+        margin-left: 185px;
+        color: #fff8;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="logo-main d-flex align-items-center">
+                <a class="d-flex align-items-center" href="index.html">
+                  <img
+                    src="front/images/logo-centrium.png"
+                    alt=""
+                    style="height: 70px"
+                  />
+                </a>
+              </div>
+              <nav class="navbar navbar-expand-xl">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsibleNavbar"
+                  aria-controls="collapsibleNavbar"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span></span><span></span><span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="d-flex navbar-nav me-5 ml-auto">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="indexe47e.html">About Us</a></li>
+                    <li><a href="index01td.html">testimonial</a></li>
+                    <li><a href="index38cd.html">FAQ</a></li>
+                    <li><a href="index56ca.html">News & Updates</a></li>
+                    <li>
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#community_modal"
+                        >community</a
+                      >
+                    </li>
+                    <li><a href="index15a0.html">Support</a></li>
+                  </ul>
+                  <div class="user-nav d-flex align-items-center">
+                    <a href="indexc30b.html" class="button-border-mini"
+                      ><i class="bi bi-person-lock"></i> Log In</a
+                    >
+                    <a
+                      href="indexcca3.html"
+                      class="button-border-mini get-started-button ms-2"
+                      >Get Started</a
+                    >
+                    <a
+                      class="ms-2 bi-globe2-link"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#myModal"
+                      ><i style="color: #fff9" class="bi bi-globe2"></i
+                    ></a>
+
+                    <style>
+                      @media (max-width: 767px) {
+                        .bi-globe2-link {
+                          font-size: 17px !important;
+                        }
+                      }
+                    </style>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <title>testimonial</title>
+
+      <div class="header-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-7 col-md-7 col-12">
+              <div class="small-title mb-2">
+                <small
+                  ><i class="bi bi-chat-heart"></i> crypto-holdings.com testimony</small
+                >
+              </div>
+              <h1 class="header-title">
+                Real people <span>real stories</span>
+              </h1>
+              <span class="d-block mt-5 w-75"
+                >Here you can find the latest review from crypto-holdings
+                along with other crypto and forex updates.</span
+              >
+            </div>
+            <div class="col-xl-5 col-12"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="testimony mt-5">
+      <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >not only did this platform turned things around for me they
+                  also make sure investor are happy
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image1.jpg"
+              />
+              <p class="profile-name">henry leksis</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >first investment made without a stress, i still can't imagine
+                  this been true to my sincerity, i honestly didn't! thank you!
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image2.jpg"
+              />
+              <p class="profile-name">suzanne ravenall</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >very easy to withdraw compared to most company i have seen, i guess that's what make them the best in crypto investment
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image3.jpg"
+              />
+              <p class="profile-name">harvey ramud</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >this is just top amazing ....... i am glad i choosed this company to invest my crypto . it worked like magic lol yeah it's not magic but one thing for sure is the end result is worth the wait and money
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image4.jpg"
+              />
+              <p class="profile-name">grayson owen</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >the price in crypto this month is my greatest challenge, i have not invested more than i used too
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image5.jpg"
+              />
+              <p class="profile-name">darcy tallulah</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >100% satisfied with the service, my profit has just reached my bank top star from me for the outstanding service
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image6.jpg"
+              />
+              <p class="profile-name">mateo debeycy delgadillo</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >so far guys i have benefited more than i expected, amost of my friend keep giving me the thanks lol
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image7.jpg"
+              />
+              <p class="profile-name">santiago gonzalez</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >thank you ek good ws hai mera 1st profit lg gaya kai tin ko.iska portfolio working thank you
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image8.jpg"
+              />
+              <p class="profile-name">solomon saucedo</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >the top investment firm of the year, happy 7th anniversary from south africa , the good pofit are all i can count on in my life congrats
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image9.jpg"
+              />
+              <p class="profile-name">perla lozoya</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >saw the market value and went back to cheack my portfolio,turns out i can now invest single cryptos! great addition to this company
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image10.jpg"
+              />
+              <p class="profile-name">rossy castro vazquez</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >i don't know if my profit would come but my friend wch we both invested has recieved his an hour ago well i am still waiting
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image11.jpg"
+              />
+              <p class="profile-name">Anne Snow</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >from the first time i got m crypto profit, i have not been disapointed by the service from the company , but i am wondering how the profit are calculate lol cus i would like to go all in , this company is worth it haha
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image12.jpg"
+              />
+              <p class="profile-name">axel garcia</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >theme based on investing in crypto is a Game changer!! haha this platform is killing it!
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image13.jpg"
+              />
+              <p class="profile-name">mary carmen pena hernandez</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >Who would belive i just got my first return today all thanks to this @cryptocholding ,my joys just increased overnigh
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image14.jpg"
+              />
+              <p class="profile-name">cinthya sanchez</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >Excellent service, fast responses, profits delivered as expected. Have Invested multiple times and very happy with services. communications are exceptional.
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image15.jpg"
+              />
+              <p class="profile-name">paul curtis jr.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <div class="card">
+              <p class="post">
+                <span><i class="fas fa-quote-left fa-3x"></i> </span>
+                <span class="post-txt"
+                  >I made a withdraw which was swift and easy, the holdings company did a wonderful job working with me. I would recommend them to anyone who has an interest in making profits with them.
+                </span>
+                <span><i class="fab fa facebook"></i></span>
+              </p>
+            </div>
+            <div class="arrow-down"></div>
+            <div class="d-flex">
+              <img
+                class="profile-pic fit-image"
+                src="front/images/testimony img/image16.jpg"
+              />
+              <p class="profile-name">ramon lopez</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mt-10" style="position: static">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-xl-12 col-12 justify-content-center">
+            <nav class="mb-5">
+              <ul class="d-flex justify-content-center">
+                <li><a href="indexe47e.html">About Us</a></li>
+                <li><a href="index.html">testimony</a></li>
+                <li><a href="index38cd.html">FAQ</a></li>
+                <li><a href="index56ca.html">News & Updates</a></li>
+                <li>
+                  <a data-bs-toggle="modal" data-bs-target="#community_modal"
+                    >community</a
+                  >
+                </li>
+                <li><a href="index15a0.html">Support</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div
+            class="col-xl-12 d-flex text-center justify-content-center col-md-12 col-12"
+          >
+            <a href="index.html">
+              <img src="front/images/L.png" alt="" width="150" />
+            </a>
+          </div>
+          <div
+            class="col-xl-12 d-flex text-center justify-content-center col-md-12 col-12 mt-4"
+          >
+            <small class="copyright"
+              >crypto-holdings.com &copy; 2024. All right reserved</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <div class="modal fade" tabindex="-1" id="community_modal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <span
+            type="button"
+            class="close-modal"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+            ><i class="bi bi-x-lg"></i
+          ></span>
+          <div class="modal-body text-center">
+            <h1>Be in touch</h1>
+            <div class="mt-5">
+              <ul class="d-flex justify-content-center">
+                <li>
+                  <a
+                    href="../external.html?link=https://t.me/####_channel1"
+                    class="d-block"
+                  >
+                    <img src="front/images/telegram2.svg" alt="" />
+                    <small class="d-block mt-2">Telegram Channel</small>
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a href="#" class="d-block">
+                    <img src="front/images/telegram2.svg" alt="" />
+                    <small class="d-block mt-2">Telegram Support</small>
+                  </a>
+                </li>
+              </ul>
+              <div class="mt-5">
+                Follow the latest news and communicate with like-minded people
+                on our social networks.
+              </div>
+            </div>
+            <div class="countdown-container mt-4">
+              <img src="front/images/hourglass.svg" alt="" />
+              <h4 class="mt-2" style="color: #53ae94">
+                Support status: Online
+              </h4>
+              <div class="mt-4 countdown-events" id="countdown-events1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <span
+            type="button"
+            class="close-modal"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+            ><i class="bi bi-x-lg"></i
+          ></span>
+          <div class="modal-body text-center">
+            <h1>Select the language</h1>
+            <div class="mt-5">
+              <ul class="lang-list d-flex flex-wrap">
+                <li>
+                  <a href="#" data-google-lang="en"
+                    ><img
+                      src="front/images/flags/united-kingdom.svg"
+                    />English</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-google-lang="es"
+                    ><img src="front/images/flags/spain.svg" />Español</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-google-lang="zh-CN"
+                    ><img src="front/images/flags/china.svg" />中国人</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-google-lang="ru"
+                    ><img src="front/images/flags/russia.svg" />Русский</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-google-lang="ar"
+                    ><img src="front/images/flags/arabic.svg" />عربي</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="copiedMessage"
+      class="popup_ok"
+      class="p-3 align-items-center"
+      style="display: none"
+    >
+      <img src="front/images/check.svg" class="me-2" alt="" />
+      <span>Password was successfully saved.</span>
+    </div>
+    <script>
+      function cbChange(obj) {
+        var cbs = document.getElementsByClassName('cb');
+        for (var i = 0; i < cbs.length; i++) {
+          cbs[i].checked = true;
+        }
+        obj.checked = false;
+      }
+    </script>
+    <script>
+      const apiKey = 'e83cd44e6c7b3c0af38c6feff514caee';
+
+      const cities = [
+        'New York',
+        'Los Angeles',
+        'Chicago',
+        'Miami',
+        'San Francisco',
+      ];
+
+      async function getWeather(city) {
+        try {
+          const response = await fetch(
+            `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
+          );
+          const data = await response.json();
+
+          const temperature = data.main.temp;
+          const cityName = data.name;
+
+          const weatherInfo = `By the way, it's ${temperature}&deg; in <strong>${cityName}</strong> now.`;
+
+          return weatherInfo;
+        } catch (error) {
+          console.error('Error when retrieving weather information:', error);
+          return 'Failed to get weather information.';
+        }
+      }
+
+      async function updateWeatherInfo() {
+        const weatherInfoElement = document.getElementById('weather-info');
+        weatherInfoElement.innerHTML = 'Uploading weather information...';
+
+        const weatherPromises = cities.map((city) => getWeather(city));
+        const weatherInfoArray = await Promise.all(weatherPromises);
+
+        weatherInfoElement.innerHTML = weatherInfoArray.join('<br>');
+      }
+
+      updateWeatherInfo();
+    </script>
+    <script>
+      var texts = [
+        'Never share your data with third parties; safeguard your privacy.',
+        'Google 2FA adds an extra layer of security to your online accounts.',
+        'Taking care of data security ensures confidentiality and integrity of information.',
+        'Strong passwords and regular updates help prevent cyber threats.',
+      ];
+      var currentIndex = 0;
+      var contentElement = document.getElementById('content-help');
+      function changeText() {
+        contentElement.textContent = texts[currentIndex];
+        currentIndex = (currentIndex + 1) % texts.length;
+      }
+      setInterval(changeText, 4000);
+      setTimeout(changeText, 0);
+    </script>
+    <script>
+      function onSuccess(googleUser) {
+        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+      }
+      function onFailure(error) {
+        console.log(error);
+      }
+      function renderButton() {
+        gapi.signin2.render('my-signin2', {
+          scope: 'profile email',
+          width: 240,
+          height: 50,
+          longtitle: true,
+          theme: 'dark',
+          onsuccess: onSuccess,
+          onfailure: onFailure,
+        });
+      }
+    </script>
+    <script src="../apis.google.com/js/platformd1c1.js" async defer></script>
+    <script>
+      var email1 = document.getElementById('email1');
+      var email2 = document.getElementById('email2');
+      email1.addEventListener('input', function () {
+        email2.value = email1.value;
+      });
+    </script>
+    <script>
+      var generatePasswordLink = document.getElementById('generatePassword');
+      var copyPasswordLink = document.getElementById('copyPassword');
+      var copiedMessage = document.getElementById('copiedMessage');
+      copyPasswordLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        copyPassword();
+      });
+      function copyPassword() {
+        var password = password1.value;
+        var tempInput = document.createElement('input');
+        tempInput.value = password;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execcommand('copy');
+        document.body.removeChild(tempInput);
+        copiedMessage.style.display = 'flex';
+        setTimeout(function () {
+          copiedMessage.style.display = 'none';
+        }, 5000);
+      }
+      generatePasswordLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        generatePassword();
+      });
+      function generatePassword() {
+        var password = Math.random().toString(36).slice(-12);
+        password1.value = password;
+        password2.value = password;
+        checkInputs();
+        copyPasswordLink.style.display = 'inline';
+      }
+    </script>
+    <script>
+      var email1 = document.getElementById('email1');
+      email1.addEventListener('input', function () {
+        email1.setAttribute('size', email1.value.length);
+      });
+      var password1 = document.getElementById('password1');
+      password1.addEventListener('input', function () {
+        password1.setAttribute('size', password1.value.length);
+      });
+    </script>
+    <script>
+      var email1 = document.getElementById('email1');
+      var password1 = document.getElementById('password1');
+      var Form = document.getElementById('Form');
+      var submitButton = document.getElementById('submitButton');
+      email1.addEventListener('input', checkInputs);
+      password1.addEventListener('input', checkInputs);
+      function checkInputs() {
+        if (email1.value.trim() !== '' && password1.value.trim() !== '') {
+          submitButton.removeAttribute('disabled');
+        } else {
+          submitButton.setAttribute('disabled', 'disabled');
+        }
+      }
+    </script>
+
+    <script>
+      function formatNumberWithK(num) {
+        return num >= 1000 ? Math.round(num / 100) / 10 + 'K+' : num.toString();
+      }
+
+      function updateFormattedNumber(elementId) {
+        const element = document.getElementById(elementId);
+        const originalNumber = parseFloat(element.innerText);
+        element.innerText = formatNumberWithK(originalNumber);
+      }
+
+      updateFormattedNumber('resultContainer2');
+      updateFormattedNumber('resultContainer3');
+    </script>
+    <script>
+      const targetDate1 = new Date(2024, 02, 5);
+      const targetDate2 = new Date(2024, 02, 5);
+
+      function updateCounter1() {
+        const currentDate = new Date();
+        const timeDifference = targetDate1 - currentDate;
+        const remainingDays = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+        document.getElementById('days1').innerText = remainingDays;
+      }
+
+      function updateCounter2() {
+        const currentDate = new Date();
+        const timeDifference = targetDate2 - currentDate;
+        const remainingDays = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+        document.getElementById('days2').innerText = remainingDays;
+      }
+
+      setInterval(updateCounter1, 1000);
+      setInterval(updateCounter2, 1000);
+
+      updateCounter1();
+      updateCounter2();
+    </script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="front/js/google-translate.js"></script>
+    <script src="front/js/bootstrap.min.js"></script>
+      <script src="front/js/script.js"></script>
+  </body>
+</html>
